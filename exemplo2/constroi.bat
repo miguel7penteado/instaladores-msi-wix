@@ -1,4 +1,8 @@
 @echo off
-candle examplo2.wxs
-light examplo2.wixobj
+cl fonte_programa.cpp /Fe: meu_programa_executavel.exe
+del *.obj
+candle exemplo2.wxs
+light exemplo2.wixobj
+del *.wix*
 @pause
+
