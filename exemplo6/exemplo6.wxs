@@ -3,6 +3,12 @@
 	<Bundle Version="1.0" Manufacturer="Test" UpgradeCode="12345678-2222-3333-4444-211122222222">
 		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense"/>
 		<Chain>
+			<!--
+			MsiPackage pacotes msi
+			ExePackage pacotes exe
+			MspPackage pacotes msp
+			MsuPackage pacotes msu
+			-->
 			<MsiPackage SourceFile="C:\WIXBundle\example.msi"/>
 			<MsiPackage SourceFile="C:\WIXBundle\example2.msi"/>
 		</Chain>
