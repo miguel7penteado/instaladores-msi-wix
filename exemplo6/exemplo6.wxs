@@ -2,6 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Bundle Version="1.0" Manufacturer="Test" UpgradeCode="12345678-2222-3333-4444-211122222222">
 		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense"/>
+		<Environment Id="PATH" Name="PATH" Value="[INSTALLDIR]" Permanent="yes" Part="last" Action="set" System="yes" />
 		<Chain>
 			<!--
 			MsiPackage pacotes msi
